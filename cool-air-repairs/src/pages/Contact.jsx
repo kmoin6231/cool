@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+{Link}
 const Contact = () => {
   return (
     <div className="py-8 sm:py-12 lg:py-16 container mx-auto px-4 sm:px-6">
@@ -7,7 +10,7 @@ const Contact = () => {
         </h1>
         
         <div className="bg-white p-6 sm:p-8 lg:p-10 rounded-lg shadow-md sm:shadow-lg">
-          <form className="space-y-4 sm:space-y-6">
+          <form className="space-y-4 sm:space-y-6" action>
             <div>
               <label className="block text-sm sm:text-base font-medium text-gray-700 mb-1 sm:mb-2">
                 Name
@@ -45,7 +48,12 @@ const Contact = () => {
               type="submit" 
               className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 sm:py-3 px-6 rounded-md transition-colors duration-300 shadow-sm hover:shadow-md"
             >
-              Send Message
+              <Link 
+          to="/" 
+          className="text-xl md:text-2xl font-bold transform hover:scale-105 transition-transform duration-300"
+        >
+          Submit
+        </Link>
             </button>
           </form>
         </div>
