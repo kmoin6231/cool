@@ -45,7 +45,7 @@ const Contact = () => {
             </div>
             
             <button 
-              type="submit" 
+              
               className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 sm:py-3 px-6 rounded-md transition-colors duration-300 shadow-sm hover:shadow-md"
             >
               <Link 
